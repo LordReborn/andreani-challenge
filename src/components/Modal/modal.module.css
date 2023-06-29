@@ -1,0 +1,61 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.createForm input {
+  height: 2em;
+  border: 1px solid;
+  padding: 1em 0.5em;
+  margin-bottom: 10px;
+}
+
+.createForm button {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: none;
+  border-radius: 25px;
+  color: #fff;
+  height: 38px;
+  padding: 0 30px;
+  background-color: #d71920;
+  border-color: transparent;
+}
+
+.buttonClose {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.buttonClose button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  font: 20px bold;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,36 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0 1em;
+}
+
+.section {
+  background-color: #f4f4f4;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.5em;
+  height: 80vh;
+}
+
+.card {
+  background-color: #fff;
+  text-align: left;
+  width: 100%;
+  border-radius: 6px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  cursor: grab;
+  border-radius: 6px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
+@media (max-width: 768px) {
+  .table {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
