@@ -8,5 +8,4 @@ export interface Cards {
   todo: Card[];
   doing: Card[];
   done: Card[];
-  status: "unitialized" | "loaded";
 }

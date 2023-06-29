@@ -7,26 +7,8 @@ const useToDo = () => {
     todo: [],
     doing: [],
     done: [],
-    status: "unitialized",
   });
   const [open, setOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    console.log("hola");
-
-    if (cards.status === "unitialized") {
-      const initial: Cards = {
-        todo: [],
-        doing: [],
-        done: [],
-        status: "loaded",
-      };
-      const storage = window.localStorage.getItem("cards");
-      if (!storage) return setCards(initial);
-      return setCards(JSON.parse(storage));
-    }
-    window.localStorage.setItem("cards", JSON.stringify(cards));
-  }, [cards]);
 
   const handleCreate = (e: React.FormEvent, data: DataI) => {
     e.preventDefault();
