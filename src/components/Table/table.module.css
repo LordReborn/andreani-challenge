@@ -11,7 +11,7 @@
   border-radius: 10px;
   width: 100%;
   padding: 0.5em;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .card {
