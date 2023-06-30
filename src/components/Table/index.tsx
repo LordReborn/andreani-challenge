@@ -42,7 +42,7 @@ const Table = ({ cards, setCards }: PropsTable) => {
         onDrop={(e) => handleDrop(e, "todo")}
         onDragOver={handleDragOver}
       >
-        <h1>To do</h1>
+        <h1>Sin realizar</h1>
         {cards.todo.map((card) => (
           <div
             draggable
@@ -60,7 +60,7 @@ const Table = ({ cards, setCards }: PropsTable) => {
         onDrop={(e) => handleDrop(e, "doing")}
         onDragOver={handleDragOver}
       >
-        <h1>Doing</h1>
+        <h1>En proceso</h1>
         {cards.doing.map((card) => (
           <div
             draggable
@@ -78,7 +78,7 @@ const Table = ({ cards, setCards }: PropsTable) => {
         onDrop={(e) => handleDrop(e, "done")}
         onDragOver={handleDragOver}
       >
-        <h1>Done</h1>
+        <h1>Realizado</h1>
         {cards.done.map((card) => (
           <div
             draggable
